@@ -5,17 +5,17 @@ body {
   position: relative;
   background: radial-gradient(
     circle at center,
-    #13876A 0%,           /* dark green center */
-    rgba(86,227,192,1) 18%, /* turquoise mid */
-    rgba(255,236,204,1) 41% /* tan outer */
+    rgba(40, 130, 110, 1) 0%,   
+    rgba(70, 190, 160, 1) 18%,   
+    rgba(230, 210, 180, 1) 41%   
   );
-  animation: breathe 12s ease-in-out infinite; /* faster for visibility */
+  animation: breathe 18s ease-in-out infinite;
 }
 
-/* Dramatic breathing animation */
+
 @keyframes breathe {
   0%   { background-size: 100% 100%; }
-  50%  { background-size: 150% 150%; } /* bigger expansion */
+  50%  { background-size: 135% 135%; }
   100% { background-size: 100% 100%; }
 }
 
@@ -47,4 +47,5 @@ body {
   50%  { transform: translateY(-15px); }
   100% { transform: translateY(0px); }
 }
+
 
