@@ -10,8 +10,8 @@ body::before {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 400%;
-  height: 400%;
+  width: 800%;
+  height: 800%;
   background: radial-gradient(
     circle,
     rgba(19, 120, 95, 1) 10%,
