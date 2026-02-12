@@ -42,7 +42,7 @@ body::before {
   left: 20px; 
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #4ecdc4, #3b7d75); 
+  background: linear-gradient(135deg, #ace1af, #8bb898); 
   border-radius: 50%; 
   box-shadow: inset 0 0 8px rgba(255,255,255,0.6),
               inset 0 0 15px rgba(0,0,0,0.2),
@@ -77,6 +77,3 @@ body::before {
               inset 0 0 20px rgba(0,0,0,0.3),
               0 4px 8px rgba(0,0,0,0.3);
 }
-
-
-</style>
