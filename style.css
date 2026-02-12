@@ -2,21 +2,21 @@ body {
   margin: 0;
   min-height: 100vh;
   overflow: hidden;
-  background: #fff; 
+  background: #13876a; 
 }
 
 body::before {
   content: "";
-  position: fixed;       
+  position: fixed;
   top: 50%;
   left: 50%;
-  width: 200%; 
+  width: 200%;
   height: 200%;
   background: radial-gradient(
-    circle at center,
-    #13876A 0%,         
-    rgba(86,227,192,1) 18%, 
-    rgba(255,236,204,1) 41%
+    circle,
+    rgba(19, 135, 106, 1) 0%,
+    rgba(86, 227, 192, 1) 13%,
+    rgba(255, 236, 204, 1) 22%
   );
   transform: translate(-50%, -50%) scale(1);
   z-index: -1;
@@ -29,7 +29,7 @@ body::before {
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    transform: translate(-50%, -50%) scale(2); 
+    transform: translate(-50%, -50%) scale(2);
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
