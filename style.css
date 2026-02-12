@@ -86,7 +86,8 @@ body::before {
 /* NAVIGATION */
 .nav {
   width: 180px;
-  margin: 40px auto 8-px auto; 
+  margin: 40px auto 80px auto; 
+  margin-left: 40px;
   background-color: rgba(172, 225, 175, 0.7);
   padding: 10px;
   border-radius: 8px;
