@@ -5,10 +5,23 @@ body {
   background: radial-gradient(
     circle at center,
     rgba(58, 180, 150, 1) 0%,
-    rgba(86, 227, 192, 1) 23%,
-    rgba(255, 236, 204, 1) 100%
+    rgba(86, 227, 192, 1) 18%,
+    rgba(255, 236, 204, 1) 41%
   );
 
   background-size: 100% 100%;
-  animation: breathe 16s ease-in-out infinite;
+  animation: breathe 18s ease-in-out infinite;
 }
+
+@keyframes breathe {
+  0% {
+    background-size: 100% 100%;
+  }
+  50% {
+    background-size: 135% 135%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
