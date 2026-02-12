@@ -14,29 +14,10 @@ body {
 }
 
 @keyframes breathe {
-  0% {
-    background-size: 100% 100%;
-  }
-  50% {
-    background-size: 135% 135%;
-  }
-  100% {
-    background-size: 100% 100%;
-  }
+  0%   { background-size: 100% 100%; }
+  50%  { background-size: 135% 135%; }
+  100% { background-size: 100% 100%; }
 }
 
-body {
-  background: linear-gradient(to bottom, #E6C7A3, #7C9A6D);
-  font-family: 'Cormorant Garamond', serif;
-}
-
-.blob {
-  background: rgba(243, 237, 228, 0.8);
-  border-radius: 60% 40% 50% 50% / 40% 60% 50% 60%;
-  padding: 60px;
-  width: 60%;
-  margin: 100px auto;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-}
 
 
