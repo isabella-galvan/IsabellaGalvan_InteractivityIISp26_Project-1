@@ -13,9 +13,3 @@ body {
 }
 
 
-@keyframes breathe {
-  0%   { background-size: 100% 100%; }
-  50%  { background-size: 135% 135%; }
-  100% { background-size: 100% 100%; }
-}
-
