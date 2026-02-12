@@ -3,43 +3,48 @@ body {
   min-height: 100vh;
   overflow: hidden;
   position: relative;
-  /* gradient with dark green center */
   background: radial-gradient(
     circle at center,
-    #13876A 0%,        
-    rgba(86,227,192,1) 18%, 
-    rgba(255,236,204,1) 41% 
+    #13876A 0%,           /* dark green center */
+    rgba(86,227,192,1) 18%, /* turquoise mid */
+    rgba(255,236,204,1) 41% /* tan outer */
   );
-  animation: breathe 12s ease-in-out infinite;
+  animation: breathe 12s ease-in-out infinite; /* faster for visibility */
 }
 
-
+/* Dramatic breathing animation */
 @keyframes breathe {
-  0% {
-    background: radial-gradient(
-      circle at center,
-      #13876A 0%,
-      rgba(86,227,192,1) 18%,
-      rgba(255,236,204,1) 41%
-    );
-    background-size: 100% 100%;
-  }
-  50% {
-    background: radial-gradient(
-      circle at center,
-      #16A87B 0%,            
-      rgba(86,227,192,1) 18%,
-      rgba(255,236,204,1) 41%
-    );
-    background-size: 150% 150%;
-  }
-  100% {
-    background: radial-gradient(
-      circle at center,
-      #13876A 0%,
-      rgba(86,227,192,1) 18%,
-      rgba(255,236,204,1) 41%
-    );
-    background-size: 100% 100%;
-  }
+  0%   { background-size: 100% 100%; }
+  50%  { background-size: 150% 150%; } /* bigger expansion */
+  100% { background-size: 100% 100%; }
 }
+
+/* Blob styling */
+.blob {
+  background: rgba(255, 236, 204, 0.85);
+  border-radius: 60% 40% 50% 50% / 40% 60% 50% 60%;
+  padding: 60px;
+  width: 60%;
+  max-width: 700px;
+  margin: 100px auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+  text-align: center;
+  animation: float 6s ease-in-out infinite;
+}
+
+.blob h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.blob p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
