@@ -3,32 +3,20 @@ body {
   min-height: 100vh;
   overflow: hidden;
   position: relative;
-  background: #FFECCC; 
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 100vh;
-  transform: translate(-50%, -50%) scale(1);
-  background: 
-    radial-gradient(circle at center, rgba(58,180,150,0.9) 0%, rgba(86,227,192,0.5) 18%, rgba(255,236,204,0.4) 60%, rgba(255,236,204,0.7) 100%),
-    radial-gradient(circle at center, rgba(255,236,204,0.2) 0%, rgba(86,227,192,0.1) 50%, rgba(58,180,150,0) 100%);
-  background-blend-mode: screen;
-  filter: blur(40px);
-  z-index: -1;
+  background: radial-gradient(
+    circle at center,
+    rgba(58,180,150,1) 0%,
+    rgba(86,227,192,1) 18%,
+    rgba(255,236,204,1) 41%
+  );
   animation: breathe 18s ease-in-out infinite;
 }
 
 @keyframes breathe {
-  0%   { transform: translate(-50%, -50%) scale(1); }
-  50%  { transform: translate(-50%, -50%) scale(1.15); }
-  100% { transform: translate(-50%, -50%) scale(1); }
+  0%   { background-size: 100% 100%; }
+  50%  { background-size: 135% 135%; }
+  100% { background-size: 100% 100%; }
 }
-
 
 .blob {
   background: rgba(255, 236, 204, 0.85);
@@ -38,7 +26,6 @@ body::before {
   max-width: 700px;
   margin: 100px auto;
   box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-  backdrop-filter: blur(5px);
   text-align: center;
   animation: float 6s ease-in-out infinite;
 }
@@ -58,6 +45,7 @@ body::before {
   50%  { transform: translateY(-15px); }
   100% { transform: translateY(0px); }
 }
+
 
 
 
