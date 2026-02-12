@@ -77,3 +77,11 @@ body::before {
               inset 0 0 20px rgba(0,0,0,0.3),
               0 4px 8px rgba(0,0,0,0.3);
 }
+
+  <!-- BODY OUTLINE--> 
+  <style>
+ img {
+  border: none;
+  outline: none;
+}
+</style>
