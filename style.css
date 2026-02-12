@@ -5,7 +5,7 @@ body {
   position: relative;
   background: radial-gradient(
     circle at center,
-    rgba(40, 130, 110, 1) 0%,    
+    #13876A 0%,    
     rgba(70, 190, 160, 1) 18%,   
     rgba(255,236,204,1) 41%  
   );
