@@ -2,7 +2,7 @@ body {
   margin: 0;
   min-height: 100vh;
   overflow: hidden;
-  background: #13785f;
+  background: #FFECCC; 
 }
 
 body::before {
@@ -14,13 +14,13 @@ body::before {
   height: 800%;
   background: radial-gradient(
     circle,
-    #FFECCC 0%,        
-    rgba(86, 227, 192, 1) 0.5%, \
-    #13785f 1%         \
+    #13785F 0%,            
+    #13785F 0.2%,          
+    #FFECCC 2%             
   );
   transform: translate(-50%, -50%) scale(1);
   z-index: -1;
-  animation: breathe 6s ease-in-out infinite;
+  animation: breathe 6s ease-in-out infinite; 
 }
 
 @keyframes breathe {
