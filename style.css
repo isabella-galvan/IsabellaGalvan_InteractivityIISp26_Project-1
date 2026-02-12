@@ -10,17 +10,17 @@ body::before {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 400%; 
+  width: 400%; /
   height: 400%;
   background: radial-gradient(
     circle,
-    rgba(19, 120, 95, 1) 0%,       
-    rgba(86, 227, 192, 1) 0.05%,     
-    rgba(255, 236, 204, 1) 18%       
+    rgba(19, 120, 95, 1) 0%,        
+    rgba(86, 227, 192, 1) 0.07%,     
+    rgba(255, 236, 204, 1) 12%       
   );
   transform: translate(-50%, -50%) scale(1);
   z-index: -1;
-  animation: breathe 6s ease-in-out infinite; 
+  animation: breathe 3s ease-in-out infinite; 
 }
 
 
