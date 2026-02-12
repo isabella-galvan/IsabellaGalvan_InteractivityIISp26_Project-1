@@ -17,4 +17,18 @@ body {
   50% {
     background: radial-gradient(
       circle 45% at center,
+      rgba(58, 180, 150, 1) 0%,
+      rgba(86, 227, 192, 1) 18%,
+      rgba(255, 236, 204, 1) 41%
+    );
+  }
 
+  100% {
+    background: radial-gradient(
+      circle 35% at center,
+      rgba(58, 180, 150, 1) 0%,
+      rgba(86, 227, 192, 1) 18%,
+      rgba(255, 236, 204, 1) 41%
+    );
+  }
+}
