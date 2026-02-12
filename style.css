@@ -3,18 +3,43 @@ body {
   min-height: 100vh;
   overflow: hidden;
   position: relative;
+  /* gradient with dark green center */
   background: radial-gradient(
     circle at center,
-    #13876A 0%,    
-    rgba(70, 190, 160, 1) 18%,   
-    rgba(255,236,204,1) 41%  
+    #13876A 0%,        
+    rgba(86,227,192,1) 18%, 
+    rgba(255,236,204,1) 41% 
   );
-  animation: breathe 18s ease-in-out infinite;
+  animation: breathe 12s ease-in-out infinite;
 }
+
 
 @keyframes breathe {
-  0%   { background-size: 100% 100%; }
-  50%  { background-size: 135% 135%; }
-  100% { background-size: 100% 100%; }
+  0% {
+    background: radial-gradient(
+      circle at center,
+      #13876A 0%,
+      rgba(86,227,192,1) 18%,
+      rgba(255,236,204,1) 41%
+    );
+    background-size: 100% 100%;
+  }
+  50% {
+    background: radial-gradient(
+      circle at center,
+      #16A87B 0%,            
+      rgba(86,227,192,1) 18%,
+      rgba(255,236,204,1) 41%
+    );
+    background-size: 150% 150%;
+  }
+  100% {
+    background: radial-gradient(
+      circle at center,
+      #13876A 0%,
+      rgba(86,227,192,1) 18%,
+      rgba(255,236,204,1) 41%
+    );
+    background-size: 100% 100%;
+  }
 }
-
