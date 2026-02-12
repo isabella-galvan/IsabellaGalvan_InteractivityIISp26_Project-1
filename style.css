@@ -14,13 +14,13 @@ body::before {
   height: 200%;
   background: radial-gradient(
     circle,
-    rgba(19, 135, 106, 1) 0%,       
-    rgba(86, 227, 192, 1) 0.5%,    
-    rgba(255, 236, 204, 1) 22%     
+    rgba(19, 135, 106, 1) 0%,        
+    rgba(86, 227, 192, 1) 0.05%,     
+    rgba(255, 236, 204, 1) 22%      
   );
   transform: translate(-50%, -50%) scale(1);
   z-index: -1;
-  animation: breathe 12s ease-in-out infinite;
+  animation: breathe 15s ease-in-out infinite; 
 }
 
 
@@ -29,7 +29,7 @@ body::before {
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%) scale(3); 
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
