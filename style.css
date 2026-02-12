@@ -11,13 +11,13 @@ body::before {
   position: fixed;       
   top: 50%;
   left: 50%;
-  width: 25%; 
-  height: 25%;
+  width: 10%; 
+  height: 10%;
   background: radial-gradient(
     circle at center,
-    #13876A 0%,         
-    rgba(86,227,192,1) 18%, 
-    rgba(255,236,204,1) 41%
+    #006666 0%,          
+    rgba(86, 227, 192, 1) 18%, 
+    rgba(255, 236, 204, 1) 41%
   );
   background-size: cover; 
   transform: translate(-50%, -50%) scale(1);
@@ -30,7 +30,7 @@ body::before {
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    transform: translate(-50%, -50%) scale(1.5);
+    transform: translate(-50%, -50%) scale(3); 
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
