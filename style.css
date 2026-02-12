@@ -2,8 +2,14 @@ body {
   margin: 0;
   min-height: 100vh;
   overflow: hidden;
-  position: relative;
-  
+  position: fixed;
+  background: radial-gradient(
+    circle at center,
+    rgba(40, 130, 110, 1) 0%,   
+    rgba(70, 190, 160, 1) 18%,   
+    rgba(230, 210, 180, 1) 41%   
+  );
+  animation: breathe 18s ease-in-out infinite;
 }
 
 
