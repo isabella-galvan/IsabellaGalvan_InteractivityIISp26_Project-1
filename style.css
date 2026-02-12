@@ -5,6 +5,7 @@ body {
   background: #FFECCC; 
   display: flex;
   flex-direction: column;
+  font-family: sans-serif;
 }
 
 /* GRADIENT */
@@ -41,12 +42,12 @@ body::before {
 /* MUSIC */
 .cd {
   position: fixed;
-  top: 20px; 
-  left: 20px; 
+  top: 20px;
+  left: 20px;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #ace1af, #8bb898); 
-  border-radius: 50%; 
+  background: linear-gradient(135deg, #ace1af, #8bb898);
+  border-radius: 50%;
   box-shadow: inset 0 0 8px rgba(255,255,255,0.6),
               inset 0 0 15px rgba(0,0,0,0.2),
               0 2px 4px rgba(0,0,0,0.2);
@@ -55,12 +56,12 @@ body::before {
   align-items: center;
   font-size: 14px;
   font-weight: bold;
-  color: #fff; 
+  color: #fff;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
-  backdrop-filter: blur(5px); 
-  -webkit-backdrop-filter: blur(5px); 
-  z-index: 1001; 
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 1001;
 }
 
 .cd::after {
@@ -84,23 +85,14 @@ body::before {
 
 /* NAVIGATION */
 .nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100%;
-  background-color: rgba(172, 225, 175, 0.7); 
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  z-index: 1000; 
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 0 10px 10px 0; 
+  width: 220px;
+  margin: 20px auto 40px auto; 
+  background-color: rgba(172, 225, 175, 0.7);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
 }
-
 
 .nav ul {
   list-style: none;
@@ -109,30 +101,33 @@ body::before {
 }
 
 .nav li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .nav a {
-  color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  display: block;
   padding: 8px 12px;
   border-radius: 4px;
   transition: background-color 0.2s;
 }
 
 .nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255,255,255,0.2);
 }
 
 
 .main-content {
-  margin-left: 220px; 
+  margin: 0 auto;
+  padding-top: 100px; 
+  width: 100%;
+  max-width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh);
-  width: calc(100% - 220px);
+  height: calc(100vh - 150px); 
   box-sizing: border-box;
-} 10px 0; 
+}
 }
