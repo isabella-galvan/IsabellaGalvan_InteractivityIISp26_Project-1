@@ -14,9 +14,9 @@ body::before {
   height: 800%;
   background: radial-gradient(
     circle,
-    rgba(19, 120, 95, 1) 0%,     
-    rgba(86, 227, 192, 1) 11%,  
-    rgba(255, 236, 204, 1) 18%  
+    #FFECCC 0%,        
+    rgba(86, 227, 192, 1) 0.5%, \
+    #13785f 1%         \
   );
   transform: translate(-50%, -50%) scale(1);
   z-index: -1;
