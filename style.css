@@ -90,17 +90,27 @@ body::before {
   display: flex;
   justify-content: center;
   padding: 10px 0; 
-background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+
+background-color: rgba(172, 225, 175, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba (172, 225, 175, 0.7);
 }
 
 .top-nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: black;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.top-nav a: hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
 }
 
 body { 
