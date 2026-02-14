@@ -88,7 +88,7 @@ body::before {
   width: 100%
   display: flex;
   justify-content: center;
-  padding: 7px 0; 
+  padding: 10px 0; 
 background-color: transparent;
   position: fixed;
   top: 0;
