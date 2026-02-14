@@ -98,7 +98,7 @@ body::before {
 
 background-color: rgba(172, 225, 175, 0.5);
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba (172, 225, 175, 0.7);
+  box-shadow: 0 0 15px rgba(172, 225, 175, 0.7);
 }
 
 .top-nav a {
@@ -109,9 +109,14 @@ background-color: rgba(172, 225, 175, 0.5);
   font-size: 16px;
 }
 
-.top-nav a: hover {
+.top-nav a:hover {
   color: #fff;
   text-shadow: 0 0 5px #fff;
+}
+
+a {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 body { 
