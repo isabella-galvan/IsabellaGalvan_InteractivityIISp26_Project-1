@@ -84,3 +84,24 @@ body::before {
 }
 
 /* NAVIGATION */
+.top-nav {
+  width: 100%
+  display: flex;
+  justify-content: center;
+  padding: 7px 0; 
+background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.top-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+body { 
+padding-top: 50px;
+}
