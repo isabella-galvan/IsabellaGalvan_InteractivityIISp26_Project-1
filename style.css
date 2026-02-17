@@ -127,20 +127,24 @@ a {
   position: fixed;
   right: 0;
   top: 0;
-  width: 100px; 
-  height: 100%; 
+  width: 100px;
+  height: 100%;
   overflow: hidden;
   z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .moving-kokopelli {
-  position: absolute;
-  right: 10px; 
+  width: 40px; 
+  height: auto;
+  margin-top: 0;
   animation: moveUpDown 2s infinite;
 }
 
 @keyframes moveUpDown {
   0% { transform: translateY(0); }
-  50% { transform: translateY(100px); } 
+  50% { transform: translateY(80px); } 
   100% { transform: translateY(0); }
 }
