@@ -6,8 +6,49 @@
 <title>Arizona</title>
 
 <link rel="stylesheet" href="style.css" />
+ <style>
+  body.arizona-page {
+   background: url('arizona.jpg') no-repeat center
+   center fixed;
+   background-size: cover; 
+   margin: 0
+   padding-top: 60px;
+  }
+  body.arizona-page::before{
+   content: "";
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height 100%;
+   background: rgba(255,255,255,0.4); 
+   z-index: -1; 
+  }
+
+ </style>
 </head>
 <body>
+
+ <!------------------------ NAV ------------------------> 
+ 
+ <div class="top-nav">
+  <a href="index.html">Home</a>
+  <a href="arizona.html" class="active">Arizona</a>
+  <a href="northcarolina.html">North Carolina</a>
+</div> 
+ 
+ <!------------------------ MUSIC ------------------------> 
+  <div class="cd" title="Remember!">🎵</div>
+
+
+<audio src="won't you come home.mp3" autoplay loop></audio>
+
+  <!------------------------ BODY OUTLINE ------------------------> 
+<body>
+  <div class="main-content">
+  <img src="body.png" alt="Centered Image" />
+  </div> 
+ 
  
 </body>
 </html>
