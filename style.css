@@ -40,6 +40,10 @@ body::before {
   }
 }
 
+body.arizona-page::before {
+  display: none; 
+
+  
 /* MUSIC */
 .cd {
   position: fixed;
