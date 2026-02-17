@@ -4,45 +4,19 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Arizona</title>
-
 <link rel="stylesheet" href="style.css" />
- <style>
 <style>
   body.arizona-page {
-   background: url('arizona.jpg') no-repeat center
-   center fixed;
-   background-size: cover; 
-   margin: 0
-   padding-top: 60px;
-  }
-  body.arizona-page::before{
-   content: "";
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height 100%;
-   background: rgba(255,255,255,0.4); 
-   z-index: -1; 
-  }
- </style>
-</head>
-<body>
-    background: url('arizona.jpg') no-repeat center center fixed;
+    background: url('arizona.jpg') no-repeat center bottom fixed;
     background-size: cover;
     margin: 0;
-    padding-top: 60px; 
+    padding-top: 60px;
     height: 100vh;
     overflow: hidden;
   }
   body.arizona-page::before {
     display: none;
   }
-
- <!------------------------ NAV ------------------------> 
-/* NAV */
-
- <div class="top-nav">
   body.arizona-page .top-nav {
     width: 300px;
     margin: 0 auto;
@@ -53,7 +27,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 165, 79, 0.8);
+    background: linear-gradient(135deg, #ff9966, #ff6600);
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 165, 79, 0.7);
     z-index: 999;
@@ -69,7 +43,6 @@
     color: #fff;
     text-shadow: 0 0 5px #fff;
   }
-  /* MUSIC */
   body.arizona-page .cd {
     position: fixed;
     top: 20px;
@@ -110,13 +83,12 @@
                 inset 0 0 20px rgba(0,0,0,0.3),
                 0 4px 8px rgba(0,0,0,0.3);
   }
-  /* BODY */
   body.arizona-page .main-content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: calc(100vh - 60px);
-    padding-top: 60px; 
+    padding: 20px;
   }
   body.arizona-page .main-content img {
     max-width: 80%;
@@ -127,31 +99,15 @@
 </style>
 </head>
 <body class="arizona-page">
-<!-- NAV -->
 <div class="top-nav">
   <a href="index.html">Home</a>
   <a href="arizona.html" class="active">Arizona</a>
   <a href="northcarolina.html">North Carolina</a>
-</div> 
- 
- <!------------------------ MUSIC ------------------------> 
-  <div class="cd" title="Remember!">🎵</div>
 </div>
-
-<!-- MUSIC -->
-<div class="cd" title="Remember...">🎵</div>
+<div class="cd" title="Remember!">🎵</div>
 <audio src="arizona.mp3" autoplay loop></audio>
-
-  <!------------------------ BODY OUTLINE ------------------------> 
-<body>
-  <div class="main-content">
-  <img src="body.png" alt="Centered Image" />
-  </div> 
- 
- 
-<!-- BODY -->
 <div class="main-content">
-  <img src="body.png" alt="Centered Body Image" />
+  <img src="body.png" alt="Centered Image" />
 </div>
 </body>
 </html>
