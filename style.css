@@ -10,9 +10,9 @@ body {
 }
 
 /* GRADIENT */
-
 body.arizona-page::before {
   display: none; 
+}
 
 body::before {
   content: "";
@@ -43,9 +43,6 @@ body::before {
     transform: translate(-50%, -50%) scale(1);
   }
 }
-
-
-
 
 /* MUSIC */
 .cd {
@@ -100,10 +97,9 @@ body::before {
   padding: 10px 0; 
   position: fixed;
   top: 0;
-  left: 50;
+  left: 50%;
   transform: translateX(-50%);
-
-background-color: rgba(172, 225, 175, 0.5);
+  background-color: rgba(172, 225, 175, 0.5);
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(172, 225, 175, 0.7);
 }
@@ -126,12 +122,7 @@ a {
   white-space: nowrap;
 }
 
-body { 
-padding-top: 50px;
-}
-
 /* KOKOPELLI */
-
 .banner-container {
   position: fixed;
   right: 0;
@@ -148,10 +139,8 @@ padding-top: 50px;
   animation: moveUpDown 2s infinite;
 }
 
-
 @keyframes moveUpDown {
   0% { transform: translateY(0); }
   50% { transform: translateY(100px); } 
   100% { transform: translateY(0); }
-}
 }
