@@ -10,6 +10,10 @@ body {
 }
 
 /* GRADIENT */
+
+body.arizona-page::before {
+  display: none; 
+  
 body::before {
   content: "";
   position: fixed;
@@ -40,8 +44,7 @@ body::before {
   }
 }
 
-body.arizona-page::before {
-  display: none; 
+
 
   
 /* MUSIC */
