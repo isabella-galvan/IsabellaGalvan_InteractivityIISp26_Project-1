@@ -14,69 +14,87 @@
     height: 100vh;
     margin: 0;
     padding: 0;
-  
   }
 
-  /*BODY*/
-
-  <div style="text-align: center; margin-top: 20px;">
-  <img src="body.png" alt="Body Image" style="max-width: 80%; height: auto; border-radius: 10px;">
-</div>
-
-    /* NAV */
-
-  <div class="top-nav">
-  <a href="index.html">Home</a>
-  <a href="northcarolina.html" class="active">North Carolina</a>
-  <a href="arizona.html">Arizona</a>
-</div> 
+  /* NAVIGATION */
   .top-nav {
-    width: 300px;
+    width: 100%;
+    max-width: 400px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    justify-content: space-around;
+    padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(135deg, #87CEFA, #00BFFF); 
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 191, 255, 0.7); 
-    z-index: 999;
+    background: rgba(70, 130, 180, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 9999;
   }
-
-   .top-nav a {
-    margin: 0 20px;
+  .top-nav a {
+    color: #87CEFA;
     text-decoration: none;
-    color: #00BFFF; 
     font-weight: bold;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
   }
-
   .top-nav a:hover {
-    color: #66CCFF; 
+    color: #00BFFF;
     text-shadow: 0 0 5px #fff;
   }
 
-   /* MUSIC */
-
-  <div class="music-player">
-  <audio controls>
-    <source src="northcarolina.mp3" type="audio/mpeg" />
-
-  </audio>
-  
-</div>
+  /* MUSIC */
   .music-player {
     position: fixed;
     top: 60px;
     right: 20px;
-    background: linear-gradient(135deg, #87CEFA, #00BFFF); 
+    background: rgba(70, 130, 180, 0.8);
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 191, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     z-index: 999;
   }
+  .music-player audio {
+    outline: none;
+  }
+
+
+  .content {
+    margin-top: 80px;
+    padding: 20px;
+  }
+</style>
+</head>
+<body class="northcarolina-page">
+
+<!-- NAVIGATION -->
+<div class="top-nav">
+  <a href="index.html">Home</a>
+  <a href="northcarolina.html" class="active">North Carolina</a>
+  <a href="arizona.html">Arizona</a>
+</div>
+
+<!-- MUSIC -->
+<div class="music-player">
+  <audio controls>
+    <source src="northcarolina.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="content">
+  <h1>Welcome to North Carolina</h1>
+  <p>This is your page content.</p>
+  <!-- Body PNG image -->
+  <div style="text-align: center; margin-top: 20px;">
+    <img src="body.png" alt="Body Image" style="max-width: 80%; height: auto; border-radius: 10px;">
+  </div>
+</div>
+
+</body>
+</html>
