@@ -145,6 +145,10 @@ body.index-page .music-player {
 body.northcarolina-page .music-player {
   background: rgba(70, 130, 180, 0.8);
 }
+<audio controls autoplay>
+  <source src="northcarolina.mp3" type="audio/mpeg" />
+</audio>
+
 body.arizona-page .music-player {
   background: rgba(255, 165, 0, 0.8);
 }
