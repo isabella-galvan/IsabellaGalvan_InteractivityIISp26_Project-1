@@ -15,8 +15,6 @@ body {
 body.arizona-page::before {
   display: none; 
 }
-body.northcarolina-page::before {
-  display: none; 
 
 body::before {
   content: "";
