@@ -94,6 +94,9 @@ body::before {
               0 4px 8px rgba(0,0,0,0.3);
 }
 
+body.northcarolina-page .music-player {
+  background: rgba(70, 130, 180, 0.8);
+
 /* NAVIGATION */
 .top-nav {
   width: 300px;
