@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>North Carolina</title>
+<style>
+  /* BACKGROUND */
+  body.northcarolina-page {
+    background-image: url('https://i.pinimg.com/originals/7d/1d/db/7d1ddb593b5161214847beafcaa68f74.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  
+  }
+
+  /*BODY*/
+
+  <div style="text-align: center; margin-top: 20px;">
+  <img src="body.png" alt="Body Image" style="max-width: 80%; height: auto; border-radius: 10px;">
+</div>
+
+    /* NAV */
+
+  <div class="top-nav">
+  <a href="index.html">Home</a>
+  <a href="northcarolina.html" class="active">North Carolina</a>
+  <a href="arizona.html">Arizona</a>
+</div> 
+  .top-nav {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #87CEFA, #00BFFF); 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.7); 
+    z-index: 999;
+  }
+
+   .top-nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #00BFFF; 
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  .top-nav a:hover {
+    color: #66CCFF; 
+    text-shadow: 0 0 5px #fff;
+  }
+
+   /* MUSIC */
+
+  <div class="music-player">
+  <audio controls>
+    <source src="northcarolina.mp3" type="audio/mpeg" />
+
+  </audio>
+  
+</div>
+  .music-player {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background: linear-gradient(135deg, #87CEFA, #00BFFF); 
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.7);
+    z-index: 999;
+  }
