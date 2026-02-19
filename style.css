@@ -14,7 +14,9 @@ body {
 /* GRADIENT */
 
 
-body.arizona-page::before,
+body.arizona-page::before, {
+  display: none;
+}
 body.northcarolina-page::before {
   display: none; 
 }
