@@ -195,42 +195,26 @@ a {
 /* TOOLTIP */
 
 
-.body-part-container {
+.reveal-text {
   position: absolute;
-}
+  left: 40px;   
+  top: 50%;
+  transform: translateY(-50%);
 
-.body-part-container .tooltip {
   opacity: 0;
-  visibility: hidden;
+  transition: opacity 0.4s ease;
 
-  position: absolute;
-  bottom: 140%;       
-  left: 50%;
-  transform: translateX(-50%);
-
-  max-width: 220px;
+  background: rgba(255,255,255,0.9);
   padding: 12px 16px;
-
-  background: #fff;
-  border-radius: 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-
-  font-size: 14px;
-  line-height: 1.4;
-  text-align: center;
-
-  transition: opacity 0.25s ease, transform 0.25s ease;
-  pointer-events: none;
-  z-index: 9999;
+  border-radius: 12px;
+  max-width: 250px;
 }
 
 
-.body-part-container:hover .tooltip {
+.body-part-container:hover .reveal-text {
   opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(-6px);
 }
-v
+
 
 /* MUSIC */
 .cd {
