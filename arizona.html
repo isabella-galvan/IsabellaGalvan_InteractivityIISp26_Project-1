@@ -9,14 +9,17 @@
   body.arizona-page {
     background: url('arizona.jpg') no-repeat center bottom fixed;
     background-size: cover;
-    margin: 0;
-    padding-top: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
   }
-  body.arizona-page::before {
+    body.northcarolina-page::before {
     display: none;
   }
+
+   /* NAVIGATION */
   body.arizona-page .top-nav {
     width: 300px;
     margin: 0 auto;
@@ -43,6 +46,8 @@
     color: #fff;
     text-shadow: 0 0 5px #fff;
   }
+
+  /* MUSIC */
   body.arizona-page .cd {
     position: fixed;
     top: 20px;
@@ -99,6 +104,8 @@
 </style>
 </head>
 <body class="arizona-page">
+
+  <!------------------------ NAV ------------------------>
 <div class="top-nav">
   <a href="index.html">Home</a>
   <a href="arizona.html" class="active">Arizona</a>
