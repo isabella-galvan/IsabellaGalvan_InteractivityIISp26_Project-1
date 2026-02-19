@@ -193,47 +193,34 @@ a {
 } 
 
 /* TOOLTIP */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+
+.tooltip-bubble {
+  position: fixed;
+  max-width: 250px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  display: none;
+  z-index: 9999;
+  pointer-events: none; 
 }
 
+/*ARROWW*/
 
-.tooltip-text {
-  visibility: hidden; 
-  width: 140px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 8px 12px;
-  border-radius: 10px;
-  position: absolute;
-  top: 50%;
-  left: 150%;
-  transform: translateY(-50%);
-  z-index: 1000;
-  opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-.tooltip-text::after {
+.tooltip-bubble::after {
   content: "";
   position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-top: -5px;
-  border-width: 5px;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px 10px 0 10px;
   border-style: solid;
-  border-color: transparent #333 transparent transparent;
+  border-color: #fff transparent transparent transparent;
 }
 
-
-.tooltip:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(-50%) translateX(10px);
-}
 
 /* MUSIC */
 .cd {
