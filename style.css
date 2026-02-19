@@ -195,14 +195,14 @@ a {
 /* TOOLTIP */
 
 
+
 .body-part {
   width: 20px;
   height: 20px;
   background: #ccc;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 0 4px rgba(0,0,0,0.2);
-  
+  position: absolute; 
 }
 
 
@@ -212,7 +212,7 @@ a {
   right: 50px; 
   transform: translateY(-50%);
   width: 300px;
-  padding: 15px 20px;
+  padding: 15px;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
@@ -221,6 +221,7 @@ a {
   display: none; 
   line-height: 1.4;
   text-align: center;
+  z-index: 999; 
 }
 
 
@@ -228,7 +229,7 @@ a {
   content: "";
   position: absolute;
   top: 50%;
-  left: -20px; 
+  left: -20px; /
   transform: translateY(-50%);
   border-width: 10px;
   border-style: solid;
@@ -236,16 +237,7 @@ a {
 }
 
 
-#left-hand:hover ~ #tooltip {
-  display: block;
-}
-#right-hand:hover ~ #tooltip {
-  display: block;
-}
-#head:hover ~ #tooltip {
-  display: block;
-}
-#heart:hover ~ #tooltip {
+.body-part-container:hover ~ #tooltip {
   display: block;
 }
 
