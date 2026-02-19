@@ -93,40 +93,144 @@
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>North Carolina</title>
+  <link rel="stylesheet" href="style.css" />
+
+<style>
+  /* BACKGROUND */
+  body.northcarolina-page {
+    background-image: url('northcarolina.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+    body.northcarolina-page::before {
+    display: none;
+  }
+
+  /* NAVIGATION */
+  .top-nav {
+  width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20 px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(70, 130, 180, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 9999;
+  }
+ .top-nav a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+ }
+  .top-nav a:hover {
+    color: #00BFFF;
+    text-shadow: 0 0 5px #fff;
+  }
+
+  /* MUSIC */
+  .music-player {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background: #87CEEB;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+  .music-player audio {
+    outline: none;
+  }
+
+
+  .content {
+    margin-top: 80px;
+    padding: 20px;
+  }
+</style>
+</head>
+<body class="northcarolina-page">
+
+<!-- NAVIGATION -->
+<div class="top-nav">
+  <a href="index.html">Home</a>
+  <a href="northcarolina.html" class="active">North Carolina</a>
+  <a href="arizona.html">Arizona</a>
+</div>
+
+<!-- MUSIC -->
+  <div class="cd" title="I know">🎵</div>
+
+  <audio src="northcarolina.mp3" autoplay loop></audio>
+
+</div>
+
+    <!------------------------ BODY POINTS ------------------------>
+
+
+
 <div class="main-content">
   <div style="position: relative; display: inline-block;">
     <img src="body.png" alt="Body" style="width: 300px; display: block;">
-
+    
+    
     <div class="body-part-container" style="position: absolute; top: 253px; left: 226px;">
       <div class="body-part" id="left-hand"></div>
+      <div class="tooltip">I am so grateful for the life that my parents have built here. Could my opportunities have been entirely different?</div>
     </div>
 
+    
     <div class="body-part-container" style="position: absolute; top: 253px; right: 226px;">
       <div class="body-part" id="right-hand"></div>
+      <div class="tooltip">I am an artist. I love creating things with my hands.</div>
     </div>
 
+    
     <div class="body-part-container" style="position: absolute; top: 20px; left: 130px;">
       <div class="body-part" id="head"></div>
+      <div class="tooltip">I'm a pretty introverted person. I enjoy my alone time.
+        I wonder if I would've been extroverted and more social?</div>
     </div>
 
+    
     <div class="body-part-container" style="position: absolute; top: 120px; left: 100px;">
       <div class="body-part" id="heart"></div>
-    </div>
-  </div>
-</div>
+      <div class="tooltip">when i was young 
 
-<!-- TOOLTIP -->
-<div id="tooltip">
-  <div class="tooltip-text" id="text-left" style="display:none;">
-    I am so grateful for the life that my parents have built here. Could my opportunities have been entirely different?
-  </div>
-  <div class="tooltip-text" id="text-right" style="display:none;">
-    I am an artist. I love creating things with my hands.
-  </div>
-  <div class="tooltip-text" id="text-head" style="display:none;">
-    I'm a pretty introverted person. I enjoy my alone time. I wonder if I would've been extroverted and more social?
-  </div>
-  <div class="tooltip-text" id="text-heart" style="display:none;">
-    when i was young <br>i wanted to live <br>inside of a classical guitar <br>and fall asleep to its song. <br>or<br>the ceiling of a catholic church<br>and<br>run up and down<br>and up and down
+<br>i wanted to live 
+
+<br>inside of a classical guitar 
+
+<br>and fall asleep to its song. 
+
+<br>or
+
+<br>the ceiling of a catholic church
+
+<br>and
+
+ <br>run up and down  
+
+and up and down 
+        
+      </div>
+    </div>
   </div>
 </div>
