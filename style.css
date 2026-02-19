@@ -17,9 +17,6 @@ body.northcarolina-page::before {
   display: none; 
 }
 
-body.arizona-page::before {
-  display: none; 
-}
 
 body::before {
   content: "";
