@@ -194,8 +194,20 @@ a {
 
 /* TOOLTIP */
 
-.tooltip-bubble {
-  position: fixed;
+
+.body-part-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.body-part-container .tooltip {
+  display: none;
+  position: absolute;
+  top: -10px; 
+  
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
   max-width: 250px;
   padding: 20px;
   background: #fff;
@@ -203,14 +215,12 @@ a {
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   font-family: Arial, sans-serif;
   font-size: 24px;
-  display: none;
+  pointer-events: none;
   z-index: 9999;
-  pointer-events: none; 
 }
 
-/*ARROWW*/
 
-.tooltip-bubble::after {
+.body-part-container .tooltip::after {
   content: "";
   position: absolute;
   bottom: -20px;
@@ -219,6 +229,11 @@ a {
   border-width: 10px 10px 0 10px;
   border-style: solid;
   border-color: #fff transparent transparent transparent;
+}
+
+
+.body-part-container:hover .tooltip {
+  display: block;
 }
 
 
