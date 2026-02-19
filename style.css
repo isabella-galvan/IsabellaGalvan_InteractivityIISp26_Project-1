@@ -12,6 +12,8 @@ body {
 
 
 /* GRADIENT */
+
+
 body.arizona-page::before {
   display: none; 
 }
@@ -38,18 +40,33 @@ body::before {
   animation: breathe 6s ease-in-out infinite; 
 }
 
+
+body::after {
+  content: "";
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  width: 100px; 
+  height: 100px;
+  background: radial-gradient(circle, rgba(255,255,255,0.5), transparent);
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(255,255,255,0.7);
+  z-index: 10; 
+  transform: translate(-50%, -50%) scale(1);
+  animation: breathe 6s ease-in-out infinite; 
+}
+
 @keyframes breathe {
   0% {
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    transform: translate(-50%, -50%) scale(2); 
+    transform: translate(-50%, -50%) scale(2);
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
   }
 }
-
 /* BODY POINTS */
 
 
