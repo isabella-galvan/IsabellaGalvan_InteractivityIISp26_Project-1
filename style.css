@@ -194,36 +194,57 @@ a {
 
 /* TOOLTIP */
 
-#fixed-tooltip {
-  position: fixed;
-  top: 50%; 
-  right: calc(100% + 50px); 
+
+.body-part-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.body-part {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ccc, #eee);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+ 
+}
+
+
+.tooltip {
+  display: none; 
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 10px); 
   transform: translateY(-50%);
-  width: 200px;
-  padding: 15px 20px;
+  padding: 10px 15px;
   background: #fff;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   font-family: Arial, sans-serif;
   font-size: 14px;
-  display: none; 
-  line-height: 1.4;
-  word-wrap: break-word;
-  text-align: center;
+  white-space: nowrap;
+  z-index: 10;
 }
 
 
-#fixed-tooltip::after {
+.tooltip::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: -20px; 
+  right: -10px; /
   transform: translateY(-50%);
   border-width: 10px;
   border-style: solid;
-  border-color: transparent #fff transparent transparent;
-  box-shadow: -1px 0 2px rgba(0,0,0,0.2);
+  border-color: transparent transparent transparent #fff;
 }
+
+
+.body-part-container:hover .tooltip {
+  display: block;
+}
+
 
 /* MUSIC */
 .cd {
