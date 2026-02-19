@@ -132,6 +132,28 @@ body {
   opacity: 1;
 }
 
+#head, #heart, #left-hand, #right-hand {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ccc, #eee);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: none;
+}
+#left-hand {
+  background: linear-gradient(45deg, #ff6f61, #ffcc70);
+}
+#right-hand {
+  background: linear-gradient(45deg, #f7971e, #ffd200);
+}
+#heart {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+#head {
+  background: linear-gradient(45deg, #43cea2, #185a9d);
+}  
+
+
 /* MUSIC */
 .cd {
   position: fixed;
