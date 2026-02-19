@@ -5,22 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Won't You Come Home</title>
 <link rel="stylesheet" href="style.css" />
-<style>
-  body {
-    margin: 0;
-    height: 100vh; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    background: #FFECCC; 
-  }
-</style>
+
 </head>
- <!------------------------ BODY OUTLINE ------------------------> 
-<body>
-  <div class="main-content">
-  <img src="body.png" alt="Centered Image" />
-  </div>
 
  <!------------------------ MUSIC ------------------------> 
   <div class="cd" title="Quién eres?">🎵</div>
@@ -36,24 +22,33 @@
   <a href="northcarolina.html">North Carolina</a>
 </div>
 
-  
+
   <!------------------------ BODY POINTS ------------------------>
 
-<div class="body-part" id="lefthand">
-  <span>Left Hand</span>
-</div>
 
-<div class="body-part" id="righthand">
-  <span>Right Hand</span>
-</div>
+<div class="main-content">
+  <div style="position: relative; display: inline-block;">
+   
+    <img src="body.png" alt="Body" style="width: 300px; display: block;">
 
-<div class="body-part" id="heart">
-  <span>Heart</span>
-</div>
+    <div class="body-part" id="left-hand" style="position: absolute; top: 253px; left: 226px;">
+      <span>Left Hand</span>
+    </div>
 
-<div class="body-part" id="head">
-  <span>Head</span>
-</div>
+    <div class="body-part" id="right-hand" style="position: absolute; top: 253px; right: 226px;">
+      <span>Right Hand</span>
+    </div>
+
+    <div class="body-part" id="head" style="position: absolute; top: 20px; left: 130px;">
+      <span>Head</span>
+    </div>
+
+    <div class="body-part" id="heart" style="position: absolute; top: 120px; left: 100px;">
+      <span>Heart</span>
+    </div>
+
+   
+
 
 </body>
 
