@@ -11,10 +11,11 @@ body {
 
 
 /* GRADIENT */
-body.arizona-page::before {
-  display: none; 
-}
 
+
+body.arizona-page::before, {
+  display: none;
+}
 body.northcarolina-page::before {
   display: none; 
 }
@@ -37,17 +38,158 @@ body::before {
   animation: breathe 6s ease-in-out infinite; 
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(255,255,255,0.5), transparent);
+  border-radius: 50%;
+  box-shadow: none;
+  z-index: 0;
+  transform: translate(-50%, -50%) scale(1);
+  animation: breathe 6s ease-in-out infinite;
+}
+
+.body-part {
+  position: absolute;
+  z-index: 2;
+}
+
 @keyframes breathe {
   0% {
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
-    transform: translate(-50%, -50%) scale(2); 
+    transform: translate(-50%, -50%) scale(2);
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
   }
 }
+
+body {
+  margin: 0;
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background: #FFECCC; 
+}
+
+/* NAVIGATION */
+.top-nav {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0; 
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(172, 225, 175, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(172, 225, 175, 0.7);
+  z-index: 100;
+}
+
+.top-nav a {
+  margin: 0 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+.top-nav a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+}
+
+a {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+
+/* BODY POINTS */
+
+
+.body-part {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+
+  
+  background: linear-gradient(45deg, #ccc, #eee);
+}
+
+
+#left-hand {
+  background: linear-gradient(45deg, #ff6f61, #ffcc70);
+}
+#right-hand {
+  background: linear-gradient(45deg, #f7971e, #ffd200);
+}
+#heart {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+#head {
+  background: linear-gradient(45deg, #43cea2, #185a9d);
+}
+
+
+.body-part:hover {
+  width: 200px;
+ 
+}
+
+.body-part span {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 0 10px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.body-part:hover span {
+  opacity: 1;
+}
+
+#head, #heart, #left-hand, #right-hand {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ccc, #eee);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: none;
+}
+#left-hand {
+  background: linear-gradient(45deg, #ff6f61, #ffcc70);
+}
+#right-hand {
+  background: linear-gradient(45deg, #f7971e, #ffd200);
+}
+#heart {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+#head {
+  background: linear-gradient(45deg, #43cea2, #185a9d);
+}  
+
 
 /* MUSIC */
 .cd {
@@ -93,40 +235,9 @@ body::before {
               0 4px 8px rgba(0,0,0,0.3);
 }
 
-/* NAVIGATION */
-.top-nav {
-  width: 300px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0; 
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(172, 225, 175, 0.5);
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(172, 225, 175, 0.7);
-}
+body.northcarolina-page .music-player {
+  background: rgba(70, 130, 180, 0.8);
 
-.top-nav a {
-  margin: 0 30px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  font-size: 16px;
-  transition: color 0.5s ease, text-shadow 0.5s ease;
-}
-
-.top-nav a:hover {
-  color: #fff;
-  text-shadow: 0 0 5px #fff;
-}
-
-a {
-  display: inline-block;
-  white-space: nowrap;
-}
 
 /* KOKOPELLI */
 
