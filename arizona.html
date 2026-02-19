@@ -1,29 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arizona</title>
-   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background-image: url('arizona.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Arizona</title>
+  <link rel="stylesheet" href="style.css" />
+
+<style>
+  /* BACKGROUND */
+  body.arizona-page {
+    background-image: url('arizona.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* NAVIGATION */
+  .top-nav {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(70, 130, 180, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 9999;
+  }
+  .top-nav a {
+    color: #87CEFA;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+  }
+  .top-nav a:hover {
+    color: #00BFFF;
+    text-shadow: 0 0 5px #fff;
+  }
+
+  /* MUSIC */
+  .music-player {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background: rgba(70, 130, 180, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+  .music-player audio {
+    outline: none;
+  }
+
+
+  .content {
+    margin-top: 80px;
+    padding: 20px;
+  }
+</style>
 </head>
-<body>
+<body class="arizona-page">
+
+<!-- NAVIGATION -->
+<div class="top-nav">
+  <a href="index.html">Home</a>
+  <a href="northcarolina.html">North Carolina</a>
+  <a href="arizona.html">Arizona</a>
+</div>
+
+<!-- MUSIC -->
+<div class="cd" title="Remember!">🎵</div>
+<audio src="arizona.mp3" autoplay loop></audio>
+
+<!------------------------ BODY POINTS ------------------------>
 
 
+<center>
+  <div style="position: relative; display: inline-block;">
+   
+    <img src="body.png" alt="Body" style="width: 300px; display: block;">
 
+    <div class="body-part" id="left-hand" style="position: absolute; top: 253px; left: 226px;">
+      <span>Left Hand</span>
+    </div>
 
+    <div class="body-part" id="right-hand" style="position: absolute; top: 253px; right: 226px;">
+      <span>Right Hand</span>
+    </div>
 
+    <div class="body-part" id="head" style="position: absolute; top: 20px; left: 130px;">
+      <span>Head</span>
+    </div>
 
-
-
+    <div class="body-part" id="heart" style="position: absolute; top: 120px; left: 100px;">
+      <span>Heart</span>
+    </div>
+  </div>
+</center>
 
 </body>
+</html>
