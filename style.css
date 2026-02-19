@@ -192,6 +192,48 @@ a {
   background: linear-gradient(45deg, #43cea2, #185a9d);
 } 
 
+/* TOOLTIP */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.tooltip-text {
+  visibility: hidden; 
+  width: 140px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 150%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #333 transparent transparent;
+}
+
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-50%) translateX(10px);
+}
 
 /* MUSIC */
 .cd {
