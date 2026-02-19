@@ -202,6 +202,7 @@ a {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  
 }
 
 
@@ -217,11 +218,10 @@ a {
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   font-family: Arial, sans-serif;
   font-size: 14px;
-  display: none;
+  display: none; 
   line-height: 1.4;
   text-align: center;
 }
-
 
 #tooltip::after {
   content: "";
@@ -237,7 +237,6 @@ a {
 
 #left-hand:hover ~ #tooltip {
   display: block;
-
 }
 #right-hand:hover ~ #tooltip {
   display: block;
@@ -250,17 +249,22 @@ a {
 }
 
 
-#left-hand:hover ~ #tooltip::after {
-  content: "I am so grateful for the life that my parents have built here. Could my opportunities have been entirely different?";
+#left-hand:hover ~ #tooltip #text-left {
+  display: block;
 }
-#right-hand:hover ~ #tooltip::after {
-  content: "I am an artist. I love creating things with my hands.";
+#right-hand:hover ~ #tooltip #text-right {
+  display: block;
 }
-#head:hover ~ #tooltip::after {
-  content: "I'm a pretty introverted person. I enjoy my alone time. I wonder if I would've been extroverted and more social?";
+#head:hover ~ #tooltip #text-head {
+  display: block;
 }
-#heart:hover ~ #tooltip::after {
-  content: "when i was young <br>i wanted to live <br>inside of a classical guitar <br>and fall asleep to its song. <br>or<br>the ceiling of a catholic church<br>and<br>run up and down<br>and up and down";
+#heart:hover ~ #tooltip #text-heart {
+  display: block;
+}
+
+
+#tooltip .tooltip-text {
+  display: none;
 }
 
 /* MUSIC */
