@@ -194,24 +194,35 @@ a {
 
 /* TOOLTIP */
 
-.body-part-container .tooltip {
-  display: none;
-  position: absolute;
-  top: -40px; 
-  left: 50%;
-  transform: translateX(-50%) translateY(-100%);
-  max-width: 150px; 
-  padding: 10px 15px;
+#fixed-tooltip {
+  position: fixed;
+  top: 50%; 
+  right: calc(100% + 50px); 
+  transform: translateY(-50%);
+  width: 200px;
+  padding: 15px 20px;
   background: #fff;
   border-radius: 30px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   font-family: Arial, sans-serif;
   font-size: 14px;
-  pointer-events: none;
-  z-index: 9999;
+  display: none; 
   line-height: 1.4;
-  word-wrap: break-word; 
-  overflow-wrap: break-word; 
+  word-wrap: break-word;
+  text-align: center;
+}
+
+
+#fixed-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px; 
+  transform: translateY(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+  box-shadow: -1px 0 2px rgba(0,0,0,0.2);
 }
 
 /* MUSIC */
