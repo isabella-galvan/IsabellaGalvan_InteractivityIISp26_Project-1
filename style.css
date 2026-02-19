@@ -207,34 +207,27 @@ a {
   white-space: nowrap;
 }
 
-/* Tooltip container */
+/* HTML: <div class="tooltip">This is a Tooltip with a gradient coloration and without border radius </div> */
 .tooltip {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-
-.tooltiptext {
-  visibility: hidden; 
-  width: 150px;
-  background-color: black;
-  color: #ffffff;
+  color: #fff;
+  font-size: 18px;
+  max-width: 28ch;
   text-align: center;
-  padding: 5px 10px;
-  border-radius: 6px;
-  position: absolute;
-  bottom: 125%; 
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
-  opacity: 0;
-  transition: opacity 0.3s;
 }
+.tooltip {
+  /* triangle dimension */
+  --b: 2em; /* base */
+  --h: 1em; /* height */
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+  --p: 50%; /* triangle position (0%:top 100%:bottom) */
+  
+  padding: 1em;
+  clip-path: polygon(100% 100%,0 100%,0 0,100% 0,
+    100% max(0%,var(--p) - var(--b)/2),
+    calc(100% + var(--h)) var(--p),
+    100% min(100%,var(--p) + var(--b)/2));
+  border-image: fill 0//0 var(--h) 0 0
+    linear-gradient(30deg,#4ECDC4,#6A4A3C); /* the gradient */
 }
 
 /* MUSIC */
