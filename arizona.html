@@ -43,7 +43,6 @@
     color: #fff;
     text-shadow: 0 0 5px #fff;
   }
-  
   body.arizona-page .cd {
     position: fixed;
     top: 20px;
@@ -96,21 +95,29 @@
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border: none;
-    outline: none;
   }
 </style>
 </head>
-
+<body class="arizona-page">
+<div class="top-nav">
+  <a href="index.html">Home</a>
+  <a href="arizona.html" class="active">Arizona</a>
+  <a href="northcarolina.html">North Carolina</a>
+</div>
 <div class="cd" title="Remember!">🎵</div>
 <audio src="arizona.mp3" autoplay loop></audio>
-
   
-<!------------------ BODY POINTS ------------------>
-<center>
+
+  <!------------------------ BODY POINTS ------------------------>
+
+
+<div class="main-content">
+  <img src="body.png" alt="Centered Image" 
+    style="border: none; outline: none;" />
+</div>
   <div style="position: relative; display: inline-block;">
    
-    <img src="body.png" alt="Body" width="300" />
+    <img src="body.png" alt="Body" style="width: 300px; display: block;">
 
     <div class="body-part" id="left-hand" style="position: absolute; top: 253px; left: 226px;">
       <span>Left Hand</span>
@@ -127,11 +134,8 @@
     <div class="body-part" id="heart" style="position: absolute; top: 120px; left: 100px;">
       <span>Heart</span>
     </div>
-  </div>
-</center>
 
-
-  <!------------------ KOKOPELLI ------------------>
+  <!---- KOKOPELLI ---->
  <div class="banner-container">
   <img src="kokopelli.png" class="moving-kokopelli" alt="Kokopelli" />
    <img src="kokopelli.png" class="moving-kokopelli" alt="Kokopelli" 
