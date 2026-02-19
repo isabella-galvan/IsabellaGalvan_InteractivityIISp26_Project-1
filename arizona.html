@@ -6,20 +6,17 @@
 <title>Arizona</title>
 <link rel="stylesheet" href="style.css" />
 <style>
-
-  /* BACKGROUND*/
   body.arizona-page {
-    background: url('arizona.jpg');
+    background: url('arizona.jpg') no-repeat center bottom fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
     margin: 0;
-    padding: 0;
+    padding-top: 60px;
+    height: 100vh;
+    overflow: hidden;
   }
- 
-
-   /* NAVIGATION */
+  body.arizona-page::before {
+    display: none;
+  }
   body.arizona-page .top-nav {
     width: 300px;
     margin: 0 auto;
@@ -46,8 +43,7 @@
     color: #fff;
     text-shadow: 0 0 5px #fff;
   }
-
-  /* MUSIC */
+  
   body.arizona-page .cd {
     position: fixed;
     top: 20px;
@@ -100,23 +96,17 @@
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border: none;
+    outline: none;
   }
 </style>
 </head>
-<body class="arizona-page">
 
-<!-- NAVIGATION -->
-<div class="top-nav">
-  <a href="index.html">Home</a>
-  <a href="arizona.html" class="active">Arizona</a>
-  <a href="northcarolina.html">North Carolina</a>
-</div>
 <div class="cd" title="Remember!">🎵</div>
 <audio src="arizona.mp3" autoplay loop></audio>
 
-<!------------------------ BODY POINTS ------------------------>
-
-
+  
+<!------------------ BODY POINTS ------------------>
 <center>
   <div style="position: relative; display: inline-block;">
    
@@ -140,10 +130,12 @@
   </div>
 </center>
 
-<!---- KOKOPELLI ---->
-<div class="banner-container">
+
+  <!------------------ KOKOPELLI ------------------>
+ <div class="banner-container">
   <img src="kokopelli.png" class="moving-kokopelli" alt="Kokopelli" />
-  <img src="kokopelli.png" class="moving-kokopelli" alt="Kokopelli" style="width:30px; height:auto;" />
+   <img src="kokopelli.png" class="moving-kokopelli" alt="Kokopelli" 
+     style="width:30px; height:auto;" />
 </div>
 
 </body>
