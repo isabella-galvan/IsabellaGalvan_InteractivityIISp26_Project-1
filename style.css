@@ -92,6 +92,7 @@ body {
   background-color: rgba(172, 225, 175, 0.5);
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(172, 225, 175, 0.7);
+  z-index: 100;
 }
 
 .top-nav a {
