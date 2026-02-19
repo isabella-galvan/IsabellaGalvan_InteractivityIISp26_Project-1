@@ -194,57 +194,25 @@ a {
 
 /* TOOLTIP */
 
-
-.body-part-container {
-  position: relative;
-  display: inline-block;
-}
-
-
-.body-part {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: linear-gradient(45deg, #ccc, #eee);
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  cursor: pointer;
- 
-}
-
-
-.tooltip {
-  display: none; 
+.body-part-container .tooltip {
+  display: none;
   position: absolute;
-  top: 50%;
-  left: calc(100% + 10px); 
-  transform: translateY(-50%);
+  top: -40px; 
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  max-width: 150px; 
   padding: 10px 15px;
   background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   font-family: Arial, sans-serif;
   font-size: 14px;
-  white-space: nowrap;
-  z-index: 10;
+  pointer-events: none;
+  z-index: 9999;
+  line-height: 1.4;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
 }
-
-
-.tooltip::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -10px; /
-  transform: translateY(-50%);
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent transparent #fff;
-}
-
-
-.body-part-container:hover .tooltip {
-  display: block;
-}
-
 
 /* MUSIC */
 .cd {
@@ -292,5 +260,3 @@ a {
 
 body.northcarolina-page .music-player {
   background: rgba(70, 130, 180, 0.8);
-
-
