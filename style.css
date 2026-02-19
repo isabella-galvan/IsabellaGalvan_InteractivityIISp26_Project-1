@@ -223,6 +223,7 @@ a {
   text-align: center;
 }
 
+
 #tooltip::after {
   content: "";
   position: absolute;
