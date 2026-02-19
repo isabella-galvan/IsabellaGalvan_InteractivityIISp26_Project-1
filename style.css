@@ -194,24 +194,73 @@ a {
 
 /* TOOLTIP */
 
-.body-part-container .tooltip {
-  display: none;
-  position: absolute;
-  top: -40px; 
-  left: 50%;
-  transform: translateX(-50%) translateY(-100%);
-  max-width: 150px; 
-  padding: 10px 15px;
+
+.body-part {
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+
+#tooltip {
+  position: fixed;
+  top: 50%; 
+  right: 50px; 
+  transform: translateY(-50%);
+  width: 300px;
+  padding: 15px 20px;
   background: #fff;
-  border-radius: 30px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   font-family: Arial, sans-serif;
   font-size: 14px;
-  pointer-events: none;
-  z-index: 9999;
+  display: none;
   line-height: 1.4;
-  word-wrap: break-word; 
-  overflow-wrap: break-word; 
+  text-align: center;
+}
+
+
+#tooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px; 
+  transform: translateY(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+}
+
+
+#left-hand:hover ~ #tooltip {
+  display: block;
+
+}
+#right-hand:hover ~ #tooltip {
+  display: block;
+}
+#head:hover ~ #tooltip {
+  display: block;
+}
+#heart:hover ~ #tooltip {
+  display: block;
+}
+
+
+#left-hand:hover ~ #tooltip::after {
+  content: "I am so grateful for the life that my parents have built here. Could my opportunities have been entirely different?";
+}
+#right-hand:hover ~ #tooltip::after {
+  content: "I am an artist. I love creating things with my hands.";
+}
+#head:hover ~ #tooltip::after {
+  content: "I'm a pretty introverted person. I enjoy my alone time. I wonder if I would've been extroverted and more social?";
+}
+#heart:hover ~ #tooltip::after {
+  content: "when i was young <br>i wanted to live <br>inside of a classical guitar <br>and fall asleep to its song. <br>or<br>the ceiling of a catholic church<br>and<br>run up and down<br>and up and down";
 }
 
 /* MUSIC */
