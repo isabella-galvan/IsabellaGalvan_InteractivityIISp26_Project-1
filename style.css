@@ -194,13 +194,6 @@ a {
 
 /* TOOLTIP */
 
-
-.body-part-container {
-  position: relative;
-  display: inline-block;
-}
-
-
 .body-part-container .tooltip {
   display: none;
   position: absolute;
@@ -208,34 +201,17 @@ a {
   left: 50%;
   transform: translateX(-50%) translateY(-100%);
   max-width: 150px; 
-  padding: 10px 15px; 
+  padding: 10px 15px;
   background: #fff;
-  border-radius: 30px; 
+  border-radius: 30px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   font-family: Arial, sans-serif;
-  font-size: 14px; 
+  font-size: 14px;
   pointer-events: none;
   z-index: 9999;
   line-height: 1.4;
-}
-
-
-.body-part-container .tooltip::after {
-  content: "";
-  position: absolute;
-  bottom: -12px; 
-  left: 50%;
-  margin-left: -8px;
-  border-width: 8px 8px 0 8px;
-  border-style: solid;
-  border-color: #fff transparent transparent transparent;
-  border-radius: 50%;
-  box-shadow: 0 0 4px rgba(0,0,0,0.2);
-}
-
-
-.body-part-container:hover .tooltip {
-  display: block;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
 }
 
 /* MUSIC */
