@@ -13,7 +13,8 @@ body {
 /* GRADIENT */
 
 
-body.arizona-page::before, {
+.arizona-page.no-gradient::before,
+.arizona-page.no-gradient::after {
   display: none;
 }
 body.northcarolina-page::before {
