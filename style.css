@@ -213,6 +213,23 @@ a {
 }
 
 
+.speech-bubble {
+  position: fixed;
+  top: 50px; 
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 80%;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  display: none; 
+  z-index: 9999; 
+  text-align: center;
+}
+
 /* MUSIC */
 .cd {
   position: fixed;
