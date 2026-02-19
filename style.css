@@ -207,31 +207,34 @@ a {
   white-space: nowrap;
 }
 
-
-.body-part:hover .label {
-  display: block;
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
 
-.speech-bubble {
-  position: fixed;
-  top: 50px; 
+.tooltiptext {
+  visibility: hidden; 
+  width: 150px;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 125%; 
   left: 50%;
   transform: translateX(-50%);
-  max-width: 80%;
-  padding: 20px;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  display: none; 
-  z-index: 9999; 
-  text-align: center;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-.body-part:hover ~ .speech-bubble {
-  display: block;
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* MUSIC */
