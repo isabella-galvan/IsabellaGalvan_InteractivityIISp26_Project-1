@@ -230,6 +230,10 @@ a {
   text-align: center;
 }
 
+.body-part:hover ~ .speech-bubble {
+  display: block;
+}
+
 /* MUSIC */
 .cd {
   position: fixed;
