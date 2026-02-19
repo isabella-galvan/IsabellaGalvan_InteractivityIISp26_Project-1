@@ -190,45 +190,8 @@ a {
 }
 #head {
   background: linear-gradient(45deg, #43cea2, #185a9d);
-}  
+} 
 
-.label {
-  display: none; 
-  position: absolute;
-  bottom: 100%; /
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.8);
-  padding: 4px 8px;
-  border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  white-space: nowrap;
-}
-
-/* HTML: <div class="tooltip">This is a Tooltip with a gradient coloration and without border radius </div> */
-.tooltip {
-  color: #fff;
-  font-size: 18px;
-  max-width: 28ch;
-  text-align: center;
-}
-.tooltip {
-  /* triangle dimension */
-  --b: 2em; /* base */
-  --h: 1em; /* height */
-
-  --p: 50%; /* triangle position (0%:top 100%:bottom) */
-  
-  padding: 1em;
-  clip-path: polygon(100% 100%,0 100%,0 0,100% 0,
-    100% max(0%,var(--p) - var(--b)/2),
-    calc(100% + var(--h)) var(--p),
-    100% min(100%,var(--p) + var(--b)/2));
-  border-image: fill 0//0 var(--h) 0 0
-    linear-gradient(30deg,#4ECDC4,#6A4A3C); /* the gradient */
-}
 
 /* MUSIC */
 .cd {
