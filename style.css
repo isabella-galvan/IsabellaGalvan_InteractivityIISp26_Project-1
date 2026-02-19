@@ -204,38 +204,39 @@ a {
 .body-part-container .tooltip {
   display: none;
   position: absolute;
-  top: -10px; 
-  
+  top: -40px; 
   left: 50%;
   transform: translateX(-50%) translateY(-100%);
-  max-width: 250px;
-  padding: 20px;
+  max-width: 150px; 
+  padding: 10px 15px; 
   background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  border-radius: 30px; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   font-family: Arial, sans-serif;
-  font-size: 24px;
+  font-size: 14px; 
   pointer-events: none;
   z-index: 9999;
+  line-height: 1.4;
 }
 
 
 .body-part-container .tooltip::after {
   content: "";
   position: absolute;
-  bottom: -20px;
+  bottom: -12px; 
   left: 50%;
-  margin-left: -10px;
-  border-width: 10px 10px 0 10px;
+  margin-left: -8px;
+  border-width: 8px 8px 0 8px;
   border-style: solid;
   border-color: #fff transparent transparent transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
 }
 
 
 .body-part-container:hover .tooltip {
   display: block;
 }
-
 
 /* MUSIC */
 .cd {
