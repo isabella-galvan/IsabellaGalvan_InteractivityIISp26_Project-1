@@ -214,6 +214,25 @@ a {
   overflow-wrap: break-word; 
 }
 
+
+#left-hand:hover ~ #tooltip #text-left {
+  display: block;
+}
+#right-hand:hover ~ #tooltip #text-right {
+  display: block;
+}
+#head:hover ~ #tooltip #text-head {
+  display: block;
+}
+#heart:hover ~ #tooltip #text-heart {
+  display: block;
+}
+
+
+#tooltip .tooltip-text {
+  display: none;
+}
+
 /* MUSIC */
 .cd {
   position: fixed;
