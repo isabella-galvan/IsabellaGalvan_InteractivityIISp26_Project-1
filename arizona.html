@@ -6,17 +6,20 @@
 <title>Arizona</title>
 <link rel="stylesheet" href="style.css" />
 <style>
+
+  /* BACKGROUND*/
   body.arizona-page {
-    background: url('arizona.jpg') no-repeat center bottom fixed;
+    background: url('arizona.jpg');
     background-size: cover;
-    margin: 0;
-    padding-top: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
   }
-  body.arizona-page::before {
-    display: none;
-  }
+ 
+
+   /* NAVIGATION */
   body.arizona-page .top-nav {
     width: 300px;
     margin: 0 auto;
@@ -43,6 +46,8 @@
     color: #fff;
     text-shadow: 0 0 5px #fff;
   }
+
+  /* MUSIC */
   body.arizona-page .cd {
     position: fixed;
     top: 20px;
@@ -99,6 +104,8 @@
 </style>
 </head>
 <body class="arizona-page">
+
+<!-- NAVIGATION -->
 <div class="top-nav">
   <a href="index.html">Home</a>
   <a href="arizona.html" class="active">Arizona</a>
@@ -106,18 +113,14 @@
 </div>
 <div class="cd" title="Remember!">🎵</div>
 <audio src="arizona.mp3" autoplay loop></audio>
-  
 
-  <!------------------------ BODY POINTS ------------------------>
+<!------------------------ BODY POINTS ------------------------>
 
 
-<div class="main-content">
-  <img src="body.png" alt="Centered Image" 
-    style="border: none; outline: none;" />
-</div>
+<center>
   <div style="position: relative; display: inline-block;">
    
-    <img src="body.png" alt="Body" style="width: 300px; display: block;">
+    <img src="body.png" alt="Body" width="300" />
 
     <div class="body-part" id="left-hand" style="position: absolute; top: 253px; left: 226px;">
       <span>Left Hand</span>
@@ -134,12 +137,13 @@
     <div class="body-part" id="heart" style="position: absolute; top: 120px; left: 100px;">
       <span>Heart</span>
     </div>
+  </div>
+</center>
 
-  <!---- KOKOPELLI ---->
- <div class="banner-container">
+<!---- KOKOPELLI ---->
+<div class="banner-container">
   <img src="kokopelli.png" class="moving-kokopelli" alt="Kokopelli" />
-   <img src="kokopelli.png" class="moving-kokopelli" alt="Kokopelli" 
-     style="width:30px; height:auto;" />
+  <img src="kokopelli.png" class="moving-kokopelli" alt="Kokopelli" style="width:30px; height:auto;" />
 </div>
 
 </body>
